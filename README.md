@@ -94,7 +94,7 @@ echo ""
 echo "SUCCESS! Now go run your containers 🐳"
 ```
 
-Give ti executable permissions and run without sudo:
+Give it executable permissions and run without sudo:
 ```bash
 $ chmod +x ./setup_native_nfs_docker_osx.sh
 ```
@@ -123,3 +123,4 @@ volumes:
 ```bash
 $ docker-compose up
 ```
+
