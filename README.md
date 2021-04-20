@@ -1,9 +1,22 @@
-### How to enable Mac OS X native NFS (incl. Mojave)
+### How to enable Mac OS X native NFS (incl. Catalina)
 And run app in Docker with native speed
 
 Based on:
 * https://medium.com/@sean.handley/how-to-set-up-docker-for-mac-with-native-nfs-145151458adc
 * https://apple.stackexchange.com/a/337510
+
+### Prerequisites
+
+Before doing anything check if NFS is already enabled in your system:
+```sh
+$ sudo nfsd status
+```
+If you get something like:
+```
+nfsd service is enabled
+nfsd is running (pid 306, 8 threads)
+```
+Then you have nothing to do here! Otherwise read further.
 
 #### 0) Install Docker for Mac
 
